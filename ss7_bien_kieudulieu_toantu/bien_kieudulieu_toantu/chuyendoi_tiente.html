@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td><b>Amount</b></td>
+        <td><b>Form Currency</b></td>
+        <td><b>To Currency</b></td>
+    </tr>
+    <tr>
+        <td><input id="nhapso" type="number"></td>
+        <td>
+            <select id="chonnuoc">
+                <option value="vn">VietNam</option>
+                <option value="usa">USA</option>
+            </select>
+        </td>
+        <td>
+            <select id="chonmenhgia">
+            <option value="vnd">VND</option>
+            <option value="usd">USD</option>
+            </select>
+        </td>
+        <td>
+            <button onclick="convert()">Convert</button>
+        </td>
+    </tr>
+    <tr>
+        <td id="result">Result=</td>
+    </tr>
+    <script>
+        const quydinh=30000;
+        function convert() {
+            let a=document.getElementById("chonnuoc").value;
+            let b=document.getElementById("chonmenhgia").value;
+            let c=parseInt(document.getElementById("nhapso").value);
+            if (a=="vn"&&b=="usd"){
+                let sum=c/quydinh;
+                document.getElementById("result").innerHTML=sum;
+            }
+            if (a=="usa"&&b=="vnd"){
+                let sum=c*quydinh;
+                document.getElementById("result").innerHTML=sum;
+            }
+        }
+    </script>
+
+
+</table>
+</body>
+</html>
