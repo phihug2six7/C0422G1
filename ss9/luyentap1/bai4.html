@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num=parseInt(prompt("Nhập số thứ 1"));
+    let num2=parseInt(prompt("Nhập số thứ 2"));
+    let num3=parseInt(prompt("Nhập số thứ 3"));
+    if (num>num2&&num>num3){
+        document.write("Số nhập đầu tiên"+"<br>"+num+"là số lớn nhất");
+    }else if (num2>num&&num2>num3){
+        document.write("Số nhập thứ 2"+"<br>"+num2+"là số lớn nhất");
+    }else if (num3>num&&num3>num2){
+        document.write("Số nhập thứ 3"+"<br>"+num3+"là số lớn nhất");
+    }else{
+        document.write("3 số bằng nhau");
+    }
+</script>
+
+</body>
+</html>

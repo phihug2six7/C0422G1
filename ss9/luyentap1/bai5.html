@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diem = parseInt(prompt("Nhập điểm bài kiểm tra từ 1-10"));
+    let diem2 = parseInt(prompt("Nhập điểm thi giữa kỳ 1-10"));
+    let diem3 = parseInt(prompt("Nhập điểm thi cuối kỳ 1-10"));
+    let diemTong = (diem + diem2 + diem3) / 3;
+    if (diemTong >= 8) {
+        document.write("Đạt học sinh giỏi");
+    } else if (diemTong < 8 && diemTong > 6.5) {
+        document.write("Đạt học sinh khá");
+    } else if (diemTong < 6.5 && diemTong > 3.5) {
+        document.write("Đạt học sinh trung bình")
+    } else if (diemTong < 3.5) {
+        document.write("Đạt học sinh yếu")
+    }
+</script>
+</body>
+</html>
