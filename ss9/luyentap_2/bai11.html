@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let money = parseInt(prompt("Nhập tiền gốc"));
+    let money2
+    if (money <= 5000000) {
+        money2 = money * (5 / 100);
+        document.write("Số tiền thuế thu nhập phải đóng" + money2);
+    } else if (money > 5000000) {
+        money2 = money * (10 / 100);
+        document.write("Số tiền thuế thu nhập phải đóng" + money2);
+    } else if (money > 10000000) {
+        money2 = money * (15 / 100);
+        document.write("Số tiền thuế thu nhập phải đóng" + money2)
+    } else if (money > 18000000) {
+        money2 = money * (20 / 100);
+        document.write("Số tiền thuế thu nhập phải đóng" + money2);
+    } else if (money > 32000000) {
+        money2 = money * (25 / 100);
+        document.write("Số tiền thuế thu nhập phải đóng" + money2);
+    } else if (money > 52000000) {
+        money2 = money * (30 / 100);
+        document.write("Số tiền thuế thu nhập phải đóng" + money2);
+    } else if (money > 80000000) {
+        money2 = money * (35 / 100);
+        document.write("Số tiền thuế thu nhập phải đóng" + money2);
+    }
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let electric=parseInt(prompt("Nhập kWh điện đã sử dụng"));
+    let money
+    if (electric>0&&electric<=50){
+         money=electric*1678;
+        document.write(money)
+    }else if (electric>=51&&electric<=100){
+        money=electric*1734;
+        document.write(money)
+    }else if (electric>=101&&electric<=200){
+        money=electric*2014;
+        document.write(money)
+    }else if (electric>=201&&electric<=300){
+        money=electric*2536;
+        document.write(money)
+    }else if (electric>=301&&electric<=400){
+        money=electric*2834;
+        document.write(money)
+    }else if (electric>401){
+        money=electric*2927
+        document.write(money)
+    }
+</script>
+
+</body>
+</html>
