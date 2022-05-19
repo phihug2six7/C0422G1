@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1: In dãy Fibonaci
+
+    </title>
+</head>
+<body>
+<script>
+    let fibonacci=parseInt(prompt("Nhập số để in ra dãy số fibonacci theo yêu cầu"));
+    let fibonacci1=0;
+    let fibonacci2=1;
+    document.write(fibonacci1+"<br>");
+    document.write(fibonacci2+"<br>");
+    for (i=0;i<=fibonacci;i++){
+        let sum=fibonacci1+fibonacci2;
+        fibonacci1=fibonacci2;
+        fibonacci2=sum;
+        document.write(sum+"<br>")
+    }
+</script>
+
+</body>
+</html>
