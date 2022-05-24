@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature{
+        constructor(doC) {
+            this._doC = doC;
+        }
+        getDoC() {
+            return this._doC;
+        }
+
+        setDoC(value) {
+            this._doC = value;
+        }
+        getDoF(){
+            return 9/5*this._doC+32
+        }
+        getDoK(){
+            return this._doC+273.15
+        }
+    }
+    let oC=parseInt(prompt("Nhập độ c để chuyển sang độ f và độ k"))
+    let temperature=new Temperature(oC);
+    document.write(temperature.getDoF()+"<br>");
+    document.write(temperature.getDoK());
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Rectangle {
+        constructor(length, width) {
+            this.length = length;
+            this.width = width;
+        }
+
+        getWidth() {
+            return this.width;
+        }
+
+        setWidth(value) {
+            this.width = value;
+        }
+
+        getLength() {
+            return this.length;
+        }
+
+        setLength(value) {
+            this.length = value;
+        }
+
+        getAcreage() {
+            return this.length * this.width
+        }
+
+        getPerimeter() {
+            return (this.width + this.length) * 2
+        }
+    }
+    let width=parseInt(prompt("Nhập chiều rộng"));
+    let length=parseInt(prompt("Nhập chiều dài"));
+    let rectangle=new Rectangle(width,length);
+    document.write(rectangle.getAcreage()+"<br>")
+    document.write(rectangle.getPerimeter())
+
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple{
+        constructor(weight) {
+            this._weight = weight;
+        }
+        getWeight() {
+            return this._weight;
+        }
+
+        setWeight(value) {
+            this._weight = value;
+        }getApple(){
+            return this._weight-1
+        }
+    }
+    class Human{
+        constructor(name,gender,weight) {
+            this._name = name;
+            this._gender = gender;
+            this._weight = weight;
+        }
+
+        get name() {
+            return this._name;
+        }
+
+        set name(value) {
+            this._name = value;
+        }
+
+        get gender() {
+            return this._gender;
+        }
+
+        set gender(value) {
+            this._gender = value;
+        }
+
+        get weight() {
+            return this._weight;
+        }
+
+        set weight(value) {
+            this._weight = value;
+        }
+    }
+</script>
+</body>
+</html>
