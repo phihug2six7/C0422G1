@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        [Bài tập] Chuyển đổi giữa feet và meters
+    </title>
+</head>
+<body>
+<script>
+    let num=parseFloat(prompt("Nhập số"));
+    footToMeter(num);
+    meterToFoot(num);
+    function footToMeter(num) {
+        let meter=0.305*num;
+        document.write("Từ f đổi sang m là:"+meter+"<br>")
+    }
+    function meterToFoot(num) {
+        let foot=3.279*num;
+        document.write("Từ m đổi sang f là"+foot)
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn.
+        Gọi hàm vừa xây dựng được
+    </title>
+</head>
+<body>
+<script>
+    let r = parseFloat(prompt("Nhập bán kính"));
+    hinhTron(r);
+    chuVi(r);
+
+    function hinhTron(r) {
+        let dienTich = r * r * Math.PI
+        document.write("Diện tích hình tròn là:" + dienTich + "<br>")
+    }
+
+    function chuVi(r) {
+        let chuVvi = 2 * r * Math.PI;
+        document.write("Chu vi hình tròn là" + chuVvi)
+    }
+
+
+</script>
+</body>
+</html>

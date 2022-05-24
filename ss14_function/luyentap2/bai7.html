@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7: Viết hàm truyền vào 2 số nguyên bất kì,
+        thực hiện đổi chỗ hai số nguyên đó.
+
+    </title>
+</head>
+<body>
+<script>
+    let num = parseInt(prompt("Nhập số nguyên thứ nhất"));
+    let num2 = parseInt(prompt("Nhập số nguyên thứ hai"));
+    document.write(num + " " + num2 + "<br>")
+    integer(num, num2);
+
+    function integer(num, num2) {
+        let num3 = num;
+        num = num2;
+        num2 = num3
+        document.write(num + " " + num2)
+    }
+</script>
+</body>
+</html>
